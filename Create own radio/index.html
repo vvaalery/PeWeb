@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Comppatible" content="ie=edge">
+    <title>Create own radio</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/" class="header__logo-link">
+                        <img src="/src/icons/Logo.svg" alt="Create own radio" class="header__logo-pic">
+                    </a>
+                </div>
+            </div>
+
+            <h4 class="header__title">Your favorite radio</h4>
+        </div>
+</header>
+
+    <main class="main">
+        <section class="intro">
+            <div class="wrapper">
+                <h2 class="main__yl-title1">Create your own radio station!</h2>
+                <h1 class="main__wh-title">It's simple!</h1>
+                <h2 class="main__yl-title2">It's much harder to do it right!</h2>
+                
+                <p class="main__text">
+                    More than 500 new radio stations appear on online platforms such as YouTube every month. 
+                    And only a few of them become popular and bring significant profit. What's the secret? 
+                    What is the formula for success? Find out at the upcoming two-day <span class="highlight">FREE</span><span> intensive!</span>
+                </p>
+                
+                <button class="button" id="openFormButton">Sign up for free</button>
+
+                <div class="form-container" id="formContainer">
+                    <div class="form-header">
+                        <h2>Register</h2>
+                        <span id="closeFormButton" class="close-button">&times;</span>
+                    </div>
+                    <form id="dataForm">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required><br>
+
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName"><br>
+
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required><br>
+
+                        <button type="submit">Register</button>
+                        <div id="successMessage" class="success-message" style="display: none;"></div>
+                    </form>
+                </div>
+
+                <div id="overlay" class="overlay"></div>
+                <script src="/src/js/script.js"></script>
+
+                <p class="header__title custom-main-title">To learn more</p>
+                <img src="/src/icons/Down icon.svg" alt="Down icon" class="main__pic-down">
+
+            </div>
+        </section>
+    </main>
+
+    <section class="reasons">
+        <h4 class="reasons-title">What awaits you in our intensive?</h4>
+        <hr style="width: 220px; border: 2px solid #F9BF3B; margin: 0 auto;">
+        <h4 class="reasons-title2">2 free full-fledged training webinars, where:</h4>
+    
+        <table class="centered-table">
+            <tr>
+                <td>
+                    <img src="/src/icons/Icon 1.png" alt="Icon 1">
+                    <p class="reasons-main-text">
+                        In just two free webinars, we will teach you how to: create your own online radio with our franchise
+                    </p>
+                </td>
+                <td>
+                    <img src="/src/icons/Icon 2.png" alt="Icon 2">
+                    <p class="reasons-main-text">
+                        We will show you how to properly optimize your website and make it attractive to search engines. Only fresh, professional and relevant information!                    </p>
+                </td>
+                <td>
+                    <img src="/src/icons/Icon 3.png" alt="Icon 3">
+                    <p class="reasons-main-text">
+                        You will learn what “good indexing”, “high traffic”, “stable increase in visitors”, “TOP for queries” are and, what is much more important, how to achieve all these indicators!</p>
+                </td>
+              </tr>
+        </table>
+    </section>
+
+    <section class="what-why">
+        <div class="image-container">
+            <img src="/src/img/Online radio.jpeg" alt="Online radio" class="Online-radio-img">
+            <div class="what-why-overlay">
+              <p class="what-why-title">What is online radio and why is it needed?</p>
+              <p class="what-why-title2">Online radio has revolutionized the way we consume audio content. With just a click or a tap, listeners can access a diverse array of music, talk shows, news, and podcasts from around the globe. Unlike traditional radio, online radio offers a virtually limitless selection of stations catering to every taste and interest.</p>
+              <p class="what-why-title2">Whether you're into pop, rock, jazz, classical, or any other genre or even podcasts, there's an online radio station for you. Online radio also provides opportunities for independent artists and niche genres to reach a wider audience.</p>
+              <p class="what-why-title2">Furthermore, the convenience of online radio cannot be overstated. It's accessible anytime, anywhere, whether you're at home, work, or on the go. With mobile apps and streaming services, listeners can enjoy their favorite stations on smartphones, tablets, or computers with an internet connection.</p>            
+              <p class="what-why-title2-bold">We will teach you how to create an attractive online radio for users and the right website for search engines and advise you on how to get it to the first pages, beating all competitors.</p>
+            </div>
+          </div>
+        </section>
+
+        <hr style="width: 100%; border-top: 2px dashed white;">
+
+        <section class="benefits">
+            <h4 class="benefits-title">After completing the training you will be able to!</h4>
+            <hr style="width: 220px; border: 2px solid #F9BF3B; margin: 0 auto;">
+        
+            <table class="centered-table">
+                <tr>
+                    <td>
+                        <div class="circle"></div>
+                        <p class="benefits-text">
+                            Create your own radio and website
+                        </p>
+                    </td>
+                    <td>
+                        <div class="circle"></div>
+                        <p class="benefits-text">
+                            Optimize them correctly     
+                        </p>               
+                        </td>
+                    <td>
+                        <div class="circle"></div>
+                        <p class="benefits-text">
+                            Provide them with slow but sure growth to the TOP
+                        </p>
+                        </td>
+                    <td>
+                        <div class="circle"></div>
+                        <p class="benefits-text">
+                            Achieve a stable increase in visitors
+                        </p>
+                        </td>
+                    <td>
+                        <div class="circle"></div>
+                        <p class="benefits-text">
+                            Receive tangible profits
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="reasons">
+            <img src="/src/icons/present.svg" alt="Present" class="present-img">
+            <h4 class="reasons-title2">Bonuses and gifts are provided for all intensive participants. Click the button below,</h4>
+            <h4 class="reasons-title2">take part in the webinars and collect your prize upon completion of the training!</h4>
+            <button class="button button-2">Sign up for free</button>
+        </section>
+
+        <section class="webinar">
+            <img src="/src/img/online.jpeg" alt="Online" class="online-img">
+            <h4 class="benefits-title">The first webinar will BE:</h4>
+            <h2 class="main__yl-title1 online-title">September 10 at 20:00 GTM+0</h2>
+            <p class="main__text online-text">Hurry up to register, the number of places is limited!</p>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <p>&copy; Support  |  Privacy Policy Call us +1 (555) 555 12342025 Your Company. All rights reserved.</p>
+            </div>
+        </footer>
+</body>
+</html>
