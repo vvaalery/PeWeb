@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет автостоянки</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <h1>Система учета автостоянки</h1>
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Форма ввода данных</h2>
+            <form id="carForm">
+                <label for="carName">Название автомобиля:</label>
+                <input type="text" id="carName" required>
+
+                <label for="ownerName">ФИО владельца:</label>
+                <input type="text" id="ownerName" required>
+
+                <label for="carNumber">Номер автомобиля:</label>
+                <input type="text" id="carNumber" required>
+
+                <label for="parkingTime">Время стоянки (часы):</label>
+                <input type="number" id="parkingTime" min="1" required>
+
+                <label for="selectId">Выберите ID для удаления:</label>
+                <select id="selectId"></select>
+
+                <button type="button" id="addBtn">Добавить запись</button>
+                <button type="button" id="clearBtn">Очистить форму</button>
+                <button type="button" id="deleteBtn">Удалить выбранную запись</button>
+            </form>
+
+            <div class="info-panel">
+                <h3>Информация:</h3>
+                <button type="button" id="minMaxBtn">Показать авто с мин/макс временем</button>
+                <div id="minMaxInfo"></div>
+            </div>
+
+            <div class="add-property">
+                <h3>Добавить новое свойство:</h3>
+                <input type="text" id="newPropertyName" placeholder="Название свойства">
+                <input type="text" id="newPropertyValue" placeholder="Значение свойства">
+                <button type="button" id="addPropertyBtn">Добавить свойство</button>
+                <div id="propertyDisplay"></div>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h2>Таблица автомобилей</h2>
+            <table id="carTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Название</th>
+                        <th>ФИО владельца</th>
+                        <th>Номер</th>
+                        <th>Время стоянки (ч)</th>
+                        <th>Доп. свойства</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="history-section">
+            <h2>История изменений</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+</html>

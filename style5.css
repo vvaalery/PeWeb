@@ -1,0 +1,105 @@
+body {
+    background-color: #f0f7fa;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #f0f7fa;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.form-section, .table-section, .history-section {
+    flex: 1;
+}
+
+form {
+    background: #d4e6f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background: #567c8d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #2f4156;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #c8d9e6;
+}
+
+.info-panel {
+    background: #d4e6f2;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.add-property {
+    margin-top: 20px;
+    padding: 15px;
+    background: #d4e6f2;
+    border-radius: 5px;
+}
+
+.history-section {
+    background: #d4e6f2;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.history-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history-section li {
+    padding: 5px 0;
+}
+
+td div {
+    margin: 3px 0;
+    padding: 2px;
+    font-size: 0.9em;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
