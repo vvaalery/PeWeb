@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рекламный плеер</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="control-panel">
+            <h1>Рекламный плеер</h1>
+            <div class="input-group">
+                <label for="interval">Интервал (секунды):</label>
+                <input type="number" id="interval" min="1" max="60" value="5">
+            </div>
+            <button id="start-btn">Запустить</button>
+        </div>
+
+        <div class="player-container hidden">
+            <div class="video-wrapper">
+                <video id="video-player" controls></video>
+            </div>
+            <div class="player-controls">
+                <button id="pause-btn">Пауза</button>
+                <div class="progress-info">
+                    <span id="current-video">1/10</span>
+                    <span id="next-video">Следующее через: 5s</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="particles"></div>
+    <script src="/script.js"></script>
+</body>
+</html>
