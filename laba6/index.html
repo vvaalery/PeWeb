@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детский сад - Регистрация</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>Регистрация детей в детском саду</h1>
+        
+        <div class="group-container" id="groups-container">
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <h3>Добавить ребенка</h3>
+                <label for="group-select-add">Группа:</label>
+                <select id="group-select-add"></select>
+                <label for="child-name-add">Фамилия ребенка:</label>
+                <input type="text" id="child-name-add">
+                <label for="position-select">Позиция:</label>
+                <select id="position-select">
+                    <option value="start">В начало</option>
+                    <option value="1">После 1-го</option>
+                    <option value="2">После 2-го</option>
+                    <option value="end">В конец</option>
+                </select>
+                <button id="add-child-btn">Добавить</button>
+            </div>
+            
+            <div class="control-group">
+                <h3>Изменить заголовок</h3>
+                <label for="heading-select">Выберите заголовок:</label>
+                <select id="heading-select"></select>
+                <label for="new-heading">Новый заголовок:</label>
+                <input type="text" id="new-heading">
+                <button id="edit-heading-btn">Изменить</button>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
