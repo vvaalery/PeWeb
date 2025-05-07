@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для Заполнения</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Форма для оставления отзыва на курсы *Лучший из лучших!*</h1>
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="fullName">ФИО:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Пол:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                    <option value="other">Другой</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Город:</label>
+                <input type="text" id="city" name="city" list="city-list">
+                <datalist id="city-list">
+                    <option value="Минск">
+                    <option value="Брест">
+                    <option value="Гродно">
+                    <option value="Витебск">
+                    <option value="Могилев">
+                    <option value="Гомель">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Отзыв:</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Ваши интересы:</label><br>
+                <input type="checkbox" id="interest1" name="interest1" value="programming">
+                <label for="interest1">Программирование</label><br>
+                <input type="checkbox" id="interest2" name="interest2" value="design">
+                <label for="interest2">Дизайн</label>
+            </div>
+
+            <button type="submit">Сохранить Данные</button>
+        </form>
+
+        <div id="dataDisplay">
+            <h2>Данные из Файлов:</h2>
+            <button id="showTextData">Показать Данные из TXT</button>
+            <button id="showXmlData">Показать Данные из XML</button>
+            <p id="textData"></p>
+            <p id="xmlData"></p>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
